@@ -1,0 +1,156 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+   width: 100vw;
+   height: 100vh;
+   background-image: url(https://images.wallpaperscraft.com/image/single/houseplant_pot_table_106649_3840x2160.jpg);
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+}
+.form{
+    min-width: 200px;
+    min-height: 250px;
+    width: 380px;
+    height: 480px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 2px black;
+    border-radius: 4px;
+    flex-direction: column;
+    overflow-x: auto;
+    overflow-y: auto;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.742);
+    animation: fade1 2.5 ease-in-out;
+}
+@keyframes fade1{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+.form:hover{
+    box-shadow: 0 2px 4px 1px rgba(0, 0, 0, 0.753);
+    transition: 1.5s ease-in-out;
+}
+.corpo{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: 2.5s ease-in-out;
+}
+.alt{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    position: relative;
+    padding: 10px;
+    flex-direction: row;
+    width: 150px;
+    justify-content: space-evenly;
+    transition: 2.5s ease-in-out;
+    animation: fade 2.5s ease-in-out;
+}
+.img:hover{
+    transform: scale(1.05);
+    transition: 1.5s ease-in-out;
+    cursor: pointer;
+}
+legend{
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    position: relative;
+    display: flex;
+    transition: 2.5s ease-in-out;
+    animation: fade 2.5s ease-in-out;
+}
+@keyframes fade{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+legend:hover{
+    transform: scale(1.07);
+    cursor: pointer;
+}
+.form-identify{
+    color:rgb(0, 0, 0);
+    display: flex;
+    position: relative;
+    justify-content: center;
+    width: 300px;
+    text-align: center;
+    align-items: center;
+    letter-spacing: 2px;
+    transition: 2.5s ease-in-out;
+    animation: fade 2.5s ease-in-out;
+}
+input{
+    color: gray;
+    background-color: transparent;
+    width: auto;
+    border-radius: 4px;
+    border: solid 1px rgba(0, 0, 0, 0.703);
+}
+input:hover{
+    background-color: rgb(255, 255, 255);
+    border: solid 1px rgba(0, 0, 0, 0.676);
+}
+label:hover{
+    transition: 2.5s ease-in-out;
+    transform: scale(1.07);
+}
+legend{
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    position: relative;
+    display: flex;
+    transition: 2.5s ease-in-out;
+    animation: fade 2.5s ease-in-out;
+}
+@keyframes fade{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+legend:hover{
+    transform: scale(1.07);
+}
+.img{
+    width: 25px;
+    height: 25px;
+}
+button{
+    color: black;
+    background-color: transparent;
+    width: 150px;
+    height: 25px;
+    border: solid 1px rgba(0, 0, 0, 0.648);
+    border-radius: 4px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: relative;
+    text-align: center;
+    top: 85px;
+    transition: 1.0s ease-in-out;
+    animation: fade2 1.5s ease-in-out;
+    letter-spacing: 3px;
+    font-size: 13px;
+    font-weight: 500;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+@keyframes fade2{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+button:hover{
+    background-color: #ffffff;
+    box-shadow: 0 3px 5px 2px rgba(0, 0, 0, 0.817);
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
